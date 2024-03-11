@@ -1,0 +1,91 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.alterbody{
+    background-image: url(chalkboard_waifu2x_art_noise1_scale.png);
+    background-repeat:round;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 3px;
+}
+
+body{
+    
+    background-image: linear-gradient(to left top, #4f9d00, #4b9200, #478700, #437c00, #3f7200, #386702, #325c04, #2c5205, #244507, #1c3907, #162d05, #112100);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.maintext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-family:  Madimi One;
+    color: #ffffff;
+    text-shadow:3px 3px 3px #000000;
+}
+
+
+
+#container{
+    margin: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: Madimi One;
+    padding: 6rem;
+    margin-top: auto;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000;
+    
+}
+
+
+#container h2{
+    margin-bottom: 70px;
+    
+}
+
+button{
+    color: white;
+    background-color: #1f3d00;
+    border-radius: 2rem;
+    font-size: x-large;
+    width: 15vw;
+    height: 15vh;
+    font-family: Caprasimo;
+    text-shadow: 5px 5px 3px #000000;
+    margin: -150px;
+    margin-top: 1px;
+    margin-left:-375px ;
+  
+}
+
+input{
+    align-items: center;
+    margin: -190px;
+    margin-right: 180px;
+    background: #294f02;
+    color:#ffffff
+}
+ 
+#tabuada{
+    margin: 23px;
+    transform: translateX(250px);
+}
+
+footer h4{
+    padding: 15px;
+    transform: translateY(150px);
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #000000;
+    font-family: Oswald;
+}

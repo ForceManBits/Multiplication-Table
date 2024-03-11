@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="style.css">
+    <link type="x-icon/image"  rel= "icon"href="https://static.thenounproject.com/png/2456543-200.png">
+
+    <!-- fontes -->
+
+        <!-- Madimi One -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+
+    <!-- Caprasimo--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+
+    <!--  Signika negative-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts. gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Oswald-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>Tabuada Moments</title>
+</head>
+    <div class="alterbody">
+<body>
+    <div class="maintext">
+
+    <H2> Coloque qualquer número aqui e descubra sua tabuada!</H2>
+
+    </div>
+
+            <div id="container">
+            <h2>Gerador de Tabuada</h2>
+
+            <input type="number" id="numInput" placeholder =" Insira um numero aí.">
+
+            <button onclick="geradorTabuada()"> Gerar tabuada</button>
+
+            <div id="tabuada"></div>
+
+        </div>
+
+        <script>
+
+            function geradorTabuada() {
+                var numInput = document.getElementById("numInput").value;
+
+                var tabuadaDiv = document.getElementById("tabuada");
+                tabuadaDiv.innerHTML = "";
+
+                if (!numInput || isNaN(numInput)) {
+                    tabuadaDiv.innerHTML = "<p> Coloque um número válido por favor. </p>";
+                    return;
+                }
+
+                var tableHTML = "<h3>Tabuada do " + numInput + "</h3> <table border='1' >  <tr> <th> Número </th> <th> Resultado </th> </tr>;"
+
+                for (var i= 1; i <= 10; i++) {
+                    tableHTML += "<tr><td>" + numInput + "x" + i + "</td> <td>" + (numInput * i) + "</td></tr>";
+                }
+
+                tableHTML += "</table>";
+                tabuadaDiv.innerHTML = tableHTML;
+                    
+
+
+
+
+            }
+
+
+        </script>
+
+
+<footer>
+
+    <h4> Developed By Guilherme Reis | March 11th | 2024</h4>
+</footer>
+</body>
+</div>
+</html>
